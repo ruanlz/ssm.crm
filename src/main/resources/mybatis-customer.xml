@@ -1,0 +1,42 @@
+<!-- <?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >  
+<mapper namespace="ssm.crm.mapper.UCustomerDao">  
+    <resultMap id="BaseResultMap" type="ssm.crm.pojo.Customer">  
+        <result column="username" property="username" />  
+        <result column="password" property="password" /> 
+        <result column="cust_idbigint" property="cust_idbigint"/> 
+        <result column="cust_namevarchar" property="cust_namevarchar"/>
+        <result column="cust_user_idbigint" property="cust_user_idbigint"/>
+        <result column="cust_create_idbigint" property="cust_create_idbigint"/>
+        <result column="cust_sourcevarchar" property="cust_sourcevarchar"/>
+        <result column="cust_industryvarchar" property="cust_industryvarchar"/>
+        <result column="cust_levelvarchar" property="cust_levelvarchar"/>
+        <result column="cust_linkmanvarchar" property="cust_linkmanvarchar"/>
+        <result column="cust_phonevarchar" property="cust_phonevarchar"/>
+        <result column="cust_mobilevarchar" property="cust_mobilevarchar"/>
+        <result column="cust_zipcodevarcharL" property="cust_zipcodevarcharL"/>
+        <result column="cust_addressvarchar" property="cust_addressvarchar"/>
+        <result column="cust_createtime" property="cust_createtime"/>
+    </resultMap>  
+  <sql id="Base_Column_List" >     
+	cust_idbigint
+	cust_namevarchar
+	cust_user_idbigint
+	cust_create_idbigint
+	cust_sourcevarchar
+	cust_industryvarchar
+	cust_levelvarchar
+	cust_linkmanvarchar
+	cust_phonevarchar
+	cust_mobilevarchar
+	cust_zipcodevarcharL
+	cust_addressvarchar
+	cust_createtime
+  </sql>  
+  <select id="selectId" resultMap="BaseResultMap" parameterType="java.lang.String" >  
+    select   
+    <include refid="Base_Column_List" />  
+    from customer  
+    where username = #{username,jdbcType=VARCHAR}  
+  </select>  
+</mapper>  -->
